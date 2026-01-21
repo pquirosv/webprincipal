@@ -18,4 +18,5 @@ jobs:
           script: |
             cd /var/www/pablo
             git stash
-            git pull --force --no-rebase origin main
+            git fetch origin main
+            git reset --hard origin/main
