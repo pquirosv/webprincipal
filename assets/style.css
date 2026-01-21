@@ -1,0 +1,141 @@
+:root {
+    --w: 80%;
+    --pad: 18px;
+    --fg: #ffffff;
+    --muted: #b8b3c7;
+    --bg: #1e0f33;
+    --link: #9ecbff;
+    --hr: #3a285e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: var(--bg);
+}
+
+body {
+    margin: 0;
+    color: var(--fg);
+    max-width: var(--w);
+    padding: var(--pad);
+    margin: 5px auto;
+}
+
+main {
+    font-size: 19px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        "Times", monospace;
+    line-height: 1.55;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.header-links {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: var(--header-menu-top-gap);
+    margin-right: 12px;
+}
+
+.header-links a {
+    margin-right: 12px;
+    color: var(--link);
+    font-size: 18px;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 { 
+    text-decoration: underline;
+    margin-bottom: 0.2em; 
+}
+
+small,
+.muted {
+    color: var(--muted);
+}
+
+ul {
+    padding-left: 18px;
+}
+
+li {
+    margin: 6px 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--hr);
+    margin: 18px 0;
+}
+
+footer {
+    margin-top: 26px;
+    font-size: 14px;
+    color: var(--muted);
+}
+/** SPECIFIC STYLES **/
+
+/* CV */
+
+.cv-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.cv-enum p {
+    margin: 6px 0;
+}
+/* Musica */
+
+.song-list li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.song-list details {
+    margin-bottom: 5px;
+}
+
+audio {
+    padding-top: 10px;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 768px){
+  .cv-grid{
+    grid-template-columns: 1fr;
+  }
+  :root {
+        --w: 90%;
+    }
+}
