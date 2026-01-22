@@ -113,6 +113,26 @@ footer {
     margin-top: 18px;
 }
 
+.current-reading-field {
+    margin-left: 6px;
+    background: transparent;
+    color: var(--fg);
+    border: 1px solid var(--hr);
+    padding: 6px 8px;
+    font-family: inherit;
+}
+
+.current-reading-field[disabled] {
+    border-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+}
+
+.current-reading-field.is-editing {
+    cursor: text;
+}
+
 .edit-button {
     background: transparent;
     color: var(--link);
