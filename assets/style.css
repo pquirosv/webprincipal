@@ -26,8 +26,7 @@ body {
 
 main {
     font-size: 19px;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-        "Times", monospace;
+    font-family: "Times New Roman", Times, "Liberation Serif", "Georgia", serif;
     line-height: 1.55;
 }
 
@@ -163,7 +162,7 @@ audio {
 /* Responsive adjustments */
 
 @media (max-width: 768px){
-  .cv-grid{
+  .section-grid{
     grid-template-columns: 1fr;
   }
   :root {
