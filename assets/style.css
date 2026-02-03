@@ -25,7 +25,7 @@ body {
 }
 
 main {
-    font-size: 19px;
+    font-size: 18px;
     font-family: "Times New Roman", Times, "Liberation Serif", "Georgia", serif;
     line-height: 1.55;
 }
@@ -147,10 +147,16 @@ audio {
 /* Responsive adjustments */
 
 @media (max-width: 768px){
+    .main {
+        font-size: 14px;
+    }
     .section-grid{
         grid-template-columns: 1fr;
     }
+    .header-links {
+        margin: 5px 0 0 0;
+    }
     :root {
-        --w: 90%;
+        --w: 95%;
     }
 }
