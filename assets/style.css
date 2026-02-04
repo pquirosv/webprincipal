@@ -1,33 +1,41 @@
 :root {
     --w: 80%;
     --pad: 18px;
-    --fg: #ffffff;
-    --muted: #b8b3c7;
-    --bg: #1e0f33;
-    --link: #9ecbff;
-    --hr: #3a285e;
+    --color-text: #ffffff;
+    --color-muted: #b8b3c7;
+    --color-bg: #1e0f33;
+    --color-link: #9ecbff;
+    --color-hr: #3a285e;
+     --font-main: "Times New Roman", Times, "Liberation Serif", "Georgia", serif;
+
+    font-size: 18px;
+    font-family: var(--font-main);
+    line-height: 1.5;
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-main);
 }
 
 html {
-    background: var(--bg);
+    background: var(--color-bg);
 }
 
 body {
     margin: 0;
-    color: var(--fg);
+    color: var(--color-text);
     max-width: var(--w);
     padding: var(--pad);
     margin: 5px auto;
 }
 
 main {
-    font-size: 19px;
+    font-size: 18px;
     font-family: "Times New Roman", Times, "Liberation Serif", "Georgia", serif;
-    line-height: 1.55;
+    line-height: 1.5;
 }
 
 .title {
@@ -36,7 +44,7 @@ main {
 }
 
 .title-hr {
-    border-top: 1px solid var(--hr);
+    border-top: 1px solid var(--color-hr);
     width: 40%;
     margin-left: auto;
     margin-right: auto;
@@ -58,14 +66,14 @@ header {
 
 .header-links a {
     margin-right: 12px;
-    color: var(--link);
+    color: var(--color-link);
     font-size: 18px;
     text-decoration: underline;
     font-style: italic;
 }
 
 a {
-    color: var(--link);
+    color: var(--color-link);
     text-decoration: none;
 }
 
@@ -86,7 +94,7 @@ h2 {
 
 small,
 .muted {
-    color: var(--muted);
+    color: var(--color-muted);
 }
 
 ul {
@@ -133,7 +141,7 @@ footer {
 }
 
 .song-list summary:hover {
-    color: var(--muted);
+    color: var(--color-muted);
 }
 
 .song-list details {
@@ -147,10 +155,16 @@ audio {
 /* Responsive adjustments */
 
 @media (max-width: 768px){
+    .main {
+        font-size: 14px;
+    }
     .section-grid{
         grid-template-columns: 1fr;
     }
+    .header-links {
+        margin: 5px 0 0 0;
+    }
     :root {
-        --w: 90%;
+        --w: 95%;
     }
 }
