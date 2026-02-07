@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ .Site.LanguageCode | default "es" }}">
+<html lang="{{ .Site.LanguageCode | default "es"}}">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,6 +11,10 @@
       <header>
         {{ partial "menu.html" . }}
       </header>
+      {{ if not .IsHome }}
+        <h1 class="title">{{ .Title }}</h1>
+        <hr class="title-hr" />
+      {{ end }}
       {{ block "main" . }}{{ end }}
     </main>
     <footer>
