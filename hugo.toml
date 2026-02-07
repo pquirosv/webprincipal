@@ -1,0 +1,8 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'es'
+title = 'Pablo Quirós'
+
+enableRobotsTXT = true
+
+[markup.goldmark.renderer]
+unsafe = true

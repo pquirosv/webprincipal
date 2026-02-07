@@ -1,0 +1,60 @@
+---
+title: "Libros"
+---
+
+<h1 class="title">Libros</h1>
+<hr class="title-hr">
+<p>Esta es una lista con algunos de los libros que más me han influenciado.</p>
+<div class="section-grid">
+  <div class="section-left">
+    <section>
+      <h2>Narrativa</h2>
+      <h3>Novela</h3>
+      <ul>
+        <li><strong>La conjura de los necios</strong>, John Kennedy Toole</li>
+        <li><strong>Crimen y Castigo</strong>, Fiodor Dostoievski</li>
+        <li><strong>Ampliación del campo de batalla</strong>, Michel Houellebecq</li>
+        <li><strong>Las partículas elementales</strong>, Michel Houellebecq</li>
+        <li><strong>La ciudad de los prodigios</strong>, Eduardo Mendoza</li>
+        <li><strong>Los detectives salvajes</strong>, Roberto Bolaño</li>
+        <li><strong>La isla del tesoro</strong>, Robert Louis Stevenson</li>
+        <h4>Ciencia Ficción</h4>
+        <li><strong>Un mundo feliz</strong>, Aldous Huxley</li>
+        <li><strong>Fundación</strong>, Isaac Asimov</li>
+        <li><strong>Solaris</strong>, Stanisław Lem</li>
+        <li><strong>El juego de Ender</strong>, Orson Scott Card</li>
+      </ul>
+      <h3>Biografías y otros</h3>
+      <ul>
+        <li><strong>El mundo de ayer</strong>, Stefan Zweig</li>
+        <li><strong>Magallanes</strong>, Stefan Zweig</li>
+        <li><strong>El Reino</strong>, Emmanuel Cárrere</li>
+      </ul>
+    </section>
+  </div>
+  <div class="section-right">
+    <section>
+      <h2>Ensayo, filosofía, historia, economía...</h2>
+      <ul>
+        <li><strong>El Único y su propiedad</strong>, Max Stirner</li>
+        <li><strong>La genealogía de la moral</strong>, Friedrich Nietzsche</li>
+        <li><strong>El 18 Brumario de Luis Bonaparte</strong>, Karl Marx</li>
+        <li><strong>La sociedad del espectáculo</strong>, Guy Debord</li>
+        <li><strong>Deuda, los primeros 5000 años</strong>, David Graeber</li>
+        <li><strong>La utopía de las normas</strong>, David Graeber</li>
+        <li><strong>La gran transformación</strong>, Karl Polanyi</li>
+        <li><strong>Camino de servidumbre</strong>, Friedrich Hayek</li>
+        <li><strong>Bronze Age Mindset</strong>, Bronze Age Pervert</li>
+        <li><strong>Historia del siglo XX</strong>, Eric Hobsbawm</li>
+        <li><strong>Historia de la guerra del Peloponeso</strong>, Tucídides</li>
+      </ul>
+      <h2>Poesía</h2>
+      <ul>
+        <li><strong>Eternidades</strong>, Juan Ramón Jiménez</li>
+        <li><strong>Romancero Gitano</strong>, Federico García Lorca</li>
+        <li><strong>Campos de Castilla</strong>, Antonio Machado</li>
+        <li><strong>Hijos de la ira</strong>, Dámaso Alonso</li>
+      </ul>
+    </section>
+  </div>
+</div>
