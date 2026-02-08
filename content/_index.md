@@ -1,9 +1,8 @@
 ---
 title: "Pablo Quirós"
 ---
-<div class="muted">
-Hola, soy Pablo Quirós Vaquero y esta es mi página web.
-</div>
+*Hola, soy Pablo Quirós Vaquero y esta es mi página web.*
+
 
 Soy un desarrollador de software nacido en Gijón y residente en la Ciudad de México.
 [Aquí](/cv/) puedes encontrar mi currículum vitae. Ahora mismo estoy tratando de ponerme al día

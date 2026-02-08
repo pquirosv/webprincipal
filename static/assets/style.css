@@ -48,7 +48,6 @@ main {
     margin: 0.5em auto 1.5em;
 }
 
-
 header {
     text-align: center;
     margin-bottom: 18px;
@@ -88,7 +87,6 @@ h2 {
     margin-bottom: 0.2em; 
 }
 
-small,
 .muted {
     color: var(--color-muted);
 }
@@ -102,7 +100,7 @@ li {
 }
 
 hr {
-    border-top: 1px solid var(--muted);
+    border-top: 1px solid var(--color-muted);
     margin: 18px 0;
 }
 

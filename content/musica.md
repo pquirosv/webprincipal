@@ -78,3 +78,4 @@ Durante 2020 y 2021 desempolvé mi tarjeta de sonido, compré un micrófono, apr
   <br>
   <small>Guitarras acústicas</small>
   </details>
+{.song-list}

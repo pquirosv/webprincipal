@@ -2,12 +2,10 @@
 title: "Currículum Vitae"
 ---
 
-<div class="title">
 
 **Pablo Quirós Vaquero**  
 _Desarrollador (Back-end · Front-end)_
-
-</div>
+{.title}
 
 - 📧 Email: [pquiro93@gmail.com](mailto:pquiro93@gmail.com)
 - 📱 Teléfono: +52 56 26 110393
@@ -52,7 +50,7 @@ _Noviembre 2016 – Noviembre 2017 · Back-end Developer_
 - Migración de un proyecto de Pascal a Java.
 
 </div>
-<div class="section-left">
+<div class="section-right">
 
 ## Educación
 
@@ -72,4 +70,5 @@ _1 año_
 
 - Inglés — C1 (Certificado Cambridge)
 
+</div>
 </div>
