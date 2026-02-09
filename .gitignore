@@ -1,0 +1,3 @@
+# Ignore the public directory, which contains built assets
+
+/public

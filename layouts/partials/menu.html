@@ -1,0 +1,58 @@
+<div class="menu">
+  <h1><a href='{{ "/" | relLangURL }}' style="color: #FFF; text-decoration: none">
+      {{ i18n "site_header" }}</a>
+  </h1>
+  <hr>
+  <div class="header-links">
+    <div class="links-group">
+    <a href='{{ relref . "cv.md" }}'>{{ i18n "menu_cv" }}</a>
+    <a href='{{ relref . "musica.md" }}'>{{ i18n "menu_music" }}</a>
+    <a href='{{ relref . "libros.md" }}'>{{ i18n "menu_books" }}</a>
+    <a href='{{ relref . "peliculas.md" }}'>{{ i18n "menu_movies" }}</a>
+    <a href="https://github.com/pquirosv">{{ i18n "menu_github" }}</a>
+    </div>
+    <div class="language-switcher">
+      {{- $cur := .Site.Language.Lang -}}
+
+      <!--Mapa: lang -> Site (para poder caer al Home del idioma)-->
+      {{- $sites := dict -}}
+      {{- range .Sites -}}
+      {{- $sites = merge $sites (dict .Language.Lang .) -}}
+      {{- end -}}
+
+      <!-- Mapa: lang -> URL de la traducción de ESTA página (si existe) *-->
+      {{- $translations := dict -}}
+      {{- range .AllTranslations -}}
+      {{- $translations = merge $translations (dict .Language.Lang .RelPermalink) -}}
+      {{- end -}}
+
+      {{- $langs := .Site.Languages -}}
+      {{- range $i, $l := $langs -}}
+      {{- $lang := $l.Lang -}}
+
+     <!-- URL preferente: la traducción de la página -->
+      {{- $url := index $translations $lang -}}
+
+      <!-- Fallback: home del idioma (es "/" para el default) -->
+      {{- if not $url -}}
+        {{- $site := index $sites $lang -}}
+        {{- if $site -}}
+         {{- $url = $site.Home.RelPermalink -}}
+        {{- else -}}
+          {{- $url = (printf "/%s/" $lang | relURL) -}}
+        {{- end -}}
+      {{- end -}}
+
+      <!--Render: idioma actual como texto (sin link y en negrita) + clase 'active' -->
+      {{- if eq $lang $cur -}}
+      <b><span class="active" aria-current="language">{{ upper $lang }}</span></b>
+      {{- else -}}
+      <a href="{{ $url }}" hreflang="{{ $lang }}">{{ upper $lang }}</a>
+      {{- end -}}
+
+      {{- if lt (add $i 1) (len $langs) }} {{ end -}}
+      {{- end -}}
+    </div>
+  </div>
+  <hr>
+</div>
