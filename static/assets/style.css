@@ -8,7 +8,7 @@
     --color-hr: #312250;
     --font-main: "Times New Roman", Times, "Liberation Serif", "Georgia", serif;
 
-    font-size: 18px;
+    font-size: 20px;
     font-family: var(--font-main);
     line-height: 1.5;
 }
@@ -28,12 +28,6 @@ body {
     max-width: var(--w);
     padding: var(--pad);
     margin: 5px auto;
-}
-
-main {
-    font-size: 18px;
-    font-family: "Times New Roman", Times, "Liberation Serif", "Georgia", serif;
-    line-height: 1.5;
 }
 
 .title {
@@ -57,16 +51,40 @@ header {
     text-align: left;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     padding-top: var(--header-menu-top-gap);
-    margin-right: 12px;
+    font-size: 18px;
 }
 
 .header-links a {
-    margin-right: 12px;
     color: var(--color-link);
-    font-size: 18px;
     text-decoration: underline;
     font-style: italic;
+}
+
+.language-switcher {
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+.language-switcher {
+    opacity: 0.65;
+}
+
+.links-group > * {
+    margin: 0.2em;
+}
+
+.links-group {
+    opacity: 0.85;
+}
+
+.links-group:hover {
+    opacity: 1;
+}
+
+.language-switcher:hover {
+    opacity: 1;
 }
 
 a {
@@ -87,7 +105,7 @@ h2 {
     margin-bottom: 0.2em; 
 }
 
-.muted {
+small {
     color: var(--color-muted);
 }
 
@@ -107,7 +125,7 @@ hr {
 footer {
     margin-top: 26px;
     font-size: 14px;
-    color: var(--muted);
+    color: var(--color-muted);
 }
 
 /** SPECIFIC STYLES **/
@@ -147,15 +165,18 @@ audio {
 
 /* Responsive adjustments */
 
-@media (max-width: 768px){
+@media (orientation: portrait) and (max-width: 500px) {
+    .language-switcher {
+        display: none;
+    }
+}
+
+@media (max-width: 770px){
     .main {
         font-size: 14px;
     }
     .section-grid{
         grid-template-columns: 1fr;
-    }
-    .header-links {
-        margin: 5px 0 0 0;
     }
     :root {
         --w: 95%;

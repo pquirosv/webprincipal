@@ -1,5 +1,6 @@
 ---
 title: "Libros"
+slug: "libros"
 ---
 
 Esta es una lista con algunos de los libros que más me han influenciado.

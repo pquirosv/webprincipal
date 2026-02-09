@@ -1,0 +1,17 @@
+[site_header]
+other = "Pablo's page"
+
+[menu_cv]
+other = "CV"
+
+[menu_music]
+other = "Music"
+
+[menu_books]
+other = "Books"
+
+[menu_movies]
+other = "Movies"
+
+[menu_github]
+other = "GitHub"

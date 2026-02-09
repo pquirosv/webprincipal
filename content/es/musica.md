@@ -64,13 +64,13 @@ Durante 2020 y 2021 desempolvé mi tarjeta de sonido, compré un micrófono, apr
   <summary>Metallica - Seek and destroy</summary>
   <audio controls src="/assets/songs/SeekAndDestroy.mp3"></audio>
   <br>
-  <small>Guitarra eléctrica rítmica, guitarra eléctrica solista, bajo, cajón, voz.</small>
+  <small>Guitarra eléctrica rítmica, guitarra eléctrica solista, bajo, cajón y voz.</small>
   </details>
 - <details>
   <summary>Iron Maiden - Hallowed be thy name</summary>
   <audio controls src="/assets/songs/HallowedBeThyName.mp3"></audio>
   <br>
-  <small>Guitarra eléctrica rítmica, guitarra eléctrica solista, bajo, cajón.</small>
+  <small>Guitarra eléctrica rítmica, guitarra eléctrica solista, bajo y cajón.</small>
   </details>
 - <details>
   <summary>The Beatles - Mother nature's son</summary>

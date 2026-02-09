@@ -1,0 +1,17 @@
+[site_header]
+other = "La página de Pablo"
+
+[menu_cv]
+other = "CV"
+
+[menu_music]
+other = "Música"
+
+[menu_books]
+other = "Libros"
+
+[menu_movies]
+other = "Películas"
+
+[menu_github]
+other = "GitHub"
